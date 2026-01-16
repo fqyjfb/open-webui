@@ -6,9 +6,7 @@
   # 构建输出目录
   publish = "build"
   # 环境变量
-  environment = {
-    NODE_VERSION = "18"
-  }
+  environment = { NODE_VERSION = "18" }
 
 [dev]
   # 开发命令
