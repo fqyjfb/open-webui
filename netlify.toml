@@ -1,0 +1,36 @@
+# Netlify Configuration for Open WebUI
+
+[build]
+  # 构建命令
+  command = "npm run build"
+  # 构建输出目录
+  publish = "build"
+  # 环境变量
+  environment = {
+    NODE_VERSION = "18"
+  }
+
+[dev]
+  # 开发命令
+  command = "npm run dev"
+  # 开发端口
+  port = 5173
+  # 自动打开浏览器
+  autoLaunch = false
+
+[headers]
+  # 设置Cache-Control头
+  for = "/*.{js,css,ico,png,jpg,jpeg,svg,gif,webp,mp3,mp4,woff,woff2,ttf,eot}"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+  # API路径不缓存
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[redirects]
+  # 单页应用重定向
+  from = "/*"
+  to = "/index.html"
+  status = 200
