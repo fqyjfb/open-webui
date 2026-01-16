@@ -1,130 +1,130 @@
-# Security Policy
+# 安全政策
 
-Our primary goal is to ensure the protection and confidentiality of sensitive data stored by users on open-webui.
+我们的首要目标是确保用户在 open-webui 上存储的敏感数据得到保护和保密。
 
-## Supported Versions
+## 支持的版本
 
-| Version (Branch) | Supported          |
+| 版本（分支） | 支持状态          |
 | ---------------- | ------------------ |
 | main             | :white_check_mark: |
 | dev              | :x:                |
 | others           | :x:                |
 
-## Zero Tolerance for External Platforms
+## 对外平台零容忍
 
-Based on a precedent of an unacceptable degree of spamming and unsolicited communications from third-party platforms, we forcefully reaffirm our stance. **We refuse to engage with, join, or monitor any platforms outside of GitHub for vulnerability reporting.** Our reasons are not just procedural but are deep-seated in the ethos of our project, which champions transparency and direct community interaction inherent in the open-source culture. Any attempts to divert our processes to external platforms will be met with outright rejection. This policy is non-negotiable and understands no exceptions.
+基于第三方平台发送的大量垃圾邮件和未经请求的通信的先例，我们强烈重申我们的立场。**我们拒绝参与、加入或监控 GitHub 以外的任何平台来报告漏洞。** 我们的理由不仅是程序上的，而且深深植根于我们项目的精神，该精神倡导开源文化中固有的透明度和直接社区互动。任何试图将我们的流程转移到外部平台的尝试都将被直接拒绝。该政策不可协商，不允许任何例外。
 
-Any reports or solicitations arriving from sources other than our designated GitHub repository will be dismissed without consideration. We’ve seen how external engagements can dilute and compromise the integrity of community-driven projects, and we’re not here to gamble with the security and privacy of our user community.
+任何来自指定 GitHub 仓库以外的报告或请求都将被视为无效。我们已经看到外部参与如何削弱和损害社区驱动项目的完整性，我们不会拿用户社区的安全和隐私冒险。
 
-## Reporting a Vulnerability
+## 报告漏洞
 
-Reports not submitted through our designated GitHub repository will be disregarded, and we will categorically reject invitations to collaborate on external platforms. Our aggressive stance on this matter underscores our commitment to a secure, transparent, and open community where all operations are visible and contributors are accountable.
+未通过指定 GitHub 仓库提交的报告将被忽略，我们将明确拒绝在外部平台合作的邀请。我们在这一问题上的强硬立场凸显了我们对安全、透明和开放社区的承诺，在这个社区中，所有操作都是可见的，贡献者都要负责。
 
-We appreciate the community's interest in identifying potential vulnerabilities. However, effective immediately, we will **not** accept low-effort vulnerability reports. Ensure that **submissions are constructive, actionable, reproducible, well documented and adhere to the following guidelines**:
+我们感谢社区对识别潜在漏洞的兴趣。然而，从即日起，我们将**不接受**低质量的漏洞报告。请确保**提交内容具有建设性、可操作、可重现、文档完善，并遵守以下指南**：
 
-1. **Report MUST be a vulnerability:** A security vulnerability is an exploitable weakness where the system behaves in an unintended way, allowing attackers to bypass security controls, gain unauthorized access, execute arbitrary code, or escalate privileges. Configuration options, missing features, and expected protocol behavior are **not vulnerabilities**.
+1. **报告必须是漏洞**：安全漏洞是一种可被利用的弱点，系统在此弱点下会以非预期方式运行，允许攻击者绕过安全控制、获得未授权访问、执行任意代码或提升权限。配置选项、缺失功能和预期协议行为 **不是漏洞**。
 
-2. **No Vague Reports**: Submissions such as "I found a vulnerability" without any details will be treated as spam and will not be accepted.
+2. **禁止模糊报告**：诸如"我发现了一个漏洞"之类没有任何细节的提交将被视为垃圾邮件，不会被接受。
 
-3. **In-Depth Understanding Required**: Reports must reflect a clear understanding of the codebase and provide specific details about the vulnerability, including the affected components and potential impacts.
+3. **需要深入理解**：报告必须反映对代码库的清晰理解，并提供有关漏洞的具体细节，包括受影响的组件和潜在影响。
 
-4. **Proof of Concept (PoC) is Mandatory**: Each submission must include a well-documented proof of concept (PoC) that demonstrates the vulnerability. If confidentiality is a concern, reporters are encouraged to create a private fork of the repository and share access with the maintainers. Reports lacking valid evidence may be disregarded.
+4. **必须提供概念验证（PoC）**：每个提交必须包含一份记录完整的概念验证（PoC），以演示漏洞。如果涉及机密性问题，鼓励报告者创建仓库的私有分支并与维护者共享访问权限。缺乏有效证据的报告可能会被忽略。
 
 > [!NOTE]
-> A PoC (Proof of Concept) is a **demonstration of exploitation of a vulnerability**. Your PoC must show:
+> 概念验证（PoC）是对漏洞利用的**演示**。您的 PoC 必须展示：
 >
-> 1. What security boundary was crossed (Confidentiality, Integrity, Availability, Authenticity, Non-repudiation)
-> 2. How this vulnerability was abused
-> 3. What actions the attacker can now perform
+> 1. 跨越了什么安全边界（机密性、完整性、可用性、真实性、不可否认性）
+> 2. 这个漏洞是如何被滥用的
+> 3. 攻击者现在可以执行什么操作
 >
-> **Examples of valid PoCs:**
+> **有效的 PoC 示例**：
 >
-> - Step-by-step reproduction instructions with exact commands
-> - Complete exploit code with detailed execution instructions
-> - Screenshots/videos demonstrating the exploit (supplementary to written steps)
+> - 带有确切命令的分步复现说明
+> - 完整的漏洞利用代码，带有详细的执行说明
+> - 演示漏洞利用的截图/视频（作为书面步骤的补充）
 >
-> **Failure to provide a reproducible PoC may lead to closure of the report**
+> **未能提供可重现的 PoC 可能导致报告被关闭**
 >
-> We will notify you, if we struggle to reproduce the exploit using your PoC to allow you to improve your PoC.
-> However, if we repeatedly cannot reproduce the exploit using the PoC, the report may be closed.
+> 如果我们使用您的 PoC 无法复现漏洞，我们会通知您，以便您改进 PoC。
+> 但是，如果我们使用 PoC 反复无法复现漏洞，报告可能会被关闭。
 
-5. **Required Patch or Actionable Remediation Plan Submission**: Along with the PoC, reporters must provide a patch or some actionable steps to remediate the identified vulnerability. This helps us evaluate and implement fixes rapidly.
+5. **必须提交补丁或可操作的修复计划**：除了 PoC 外，报告者还必须提供补丁或一些可操作的步骤来修复已识别的漏洞。这有助于我们快速评估和实施修复。
 
-6. **Streamlined Merging Process**: When vulnerability reports meet the above criteria, we can consider provided patches for immediate merging, similar to regular pull requests. Well-structured and thorough submissions will expedite the process of enhancing our security.
+6. **简化合并流程**：当漏洞报告符合上述标准时，我们可以考虑将提供的补丁立即合并，类似于常规的拉取请求。结构良好、内容全面的提交将加快我们增强安全性的进程。
 
-7. **Default Configuration Testing**: All vulnerability reports MUST be tested and reproducible using Open WebUI's out-of-the-box default configuration. Claims of vulnerabilities that only manifest with explicitly weakened security settings may be discarded, unless they are covered by the following exception:
+7. **默认配置测试**：所有漏洞报告必须使用 Open WebUI 的开箱即用默认配置进行测试和复现。仅在显式削弱的安全设置下才会出现的漏洞声明可能会被丢弃，除非它们符合以下例外情况：
 
 > [!NOTE]  
-> **Note**: If you believe you have found a security issue that
+> **注意**：如果您认为您发现了一个安全问题，并且
 >
-> 1. affects default configurations, **or**
-> 2. represents a genuine bypass of intended security controls, **or**
-> 3. works only with non-default configurations, **but the configuration in question is likely to be used by production deployments**, **then we absolutely want to hear about it.** This policy is intended to filter configuration issues and deployment problems, not to discourage legitimate security research.
+> 1. 影响默认配置，**或**
+> 2. 代表了对预期安全控制的真正绕过，**或**
+> 3. 仅在非默认配置下有效，**但该配置可能被生产部署使用**，**那么我们绝对希望听到它**。本政策旨在过滤配置问题和部署问题，而不是阻止合法的安全研究。
 
-8. **Threat Model Understanding Required**: Reports must demonstrate understanding of Open WebUI's self-hosted, authenticated, role-based access control architecture. Comparing Open WebUI to services with fundamentally different security models without acknowledging the architectural differences may result in report rejection.
+8. **需要理解威胁模型**：报告必须展示对 Open WebUI 自托管、已认证、基于角色的访问控制架构的理解。将 Open WebUI 与具有根本不同安全模型的服务进行比较，而不承认架构差异，可能导致报告被拒绝。
 
-9. **CVSS Scoring Accuracy:** If you include a CVSS score with your report, it must accurately reflect the vulnerability according to CVSS methodology. Common errors include 1) rating PR:N (None) when authentication is required, 2) scoring hypothetical attack chains instead of the actual vulnerability, or 3) inflating severity without evidence. **We will adjust inaccurate CVSS scores.** Intentionally inflated scores may result in report rejection.
+9. **CVSS 评分准确性**：如果您在报告中包含 CVSS 评分，它必须根据 CVSS 方法准确反映漏洞。常见错误包括：1) 当需要认证时将 PR:N（无）评为风险，2) 对假设的攻击链而非实际漏洞进行评分，或 3) 无证据地夸大严重性。**我们将调整不准确的 CVSS 评分**。故意夸大评分可能导致报告被拒绝。
 
 > [!WARNING]
 >
-> **Using CVE Precedents:** If you cite other CVEs to support your report, ensure they are **genuinely comparable** in vulnerability type, threat model, and attack vector. Citing CVEs from different product categories, different vulnerability classes or different deployment models will lead us to suspect the use of AI in your report.
+> **使用 CVE 先例**：如果您引用其他 CVE 来支持您的报告，请确保它们在漏洞类型、威胁模型和攻击向量方面**真正可比**。引用来自不同产品类别、不同漏洞类别或不同部署模型的 CVE 将导致我们怀疑您的报告使用了 AI。
 
-10. **Admin Actions Are Out of Scope:** Vulnerabilities that require an administrator to actively perform unsafe actions are **not considered valid vulnerabilities**. Admins have full system control and are expected to understand the security implications of their actions and configurations. This includes but is not limited to: adding malicious external servers (models, tools, webhooks), pasting untrusted code into Functions/Tools, or intentionally weakening security settings. **Reports requiring admin negligence or social engineering of admins may be rejected.**
-
-> [!NOTE]
-> Similar to rule "Default Configuration Testing": If you believe you have found a vulnerability that affects admins and is NOT caused by admin negligence or intentionally malicious actions,
-> **then we absolutely want to hear about it.** This policy is intended to filter social engineering attacks on admins, malicious plugins being deployed by admins and similar malicious actions, not to discourage legitimate security research.
-
-11. **AI report transparency:** Due to an extreme spike in AI-aided vulnerability reports **YOU MUST DISCLOSE if AI was used in any capacity** - whether for writing the report, generating the PoC, or identifying the vulnerability. If AI helped you in any way shape or form in the creation of the report, PoC or finding the vulnerability, you MUST disclose it.
+10. **管理员操作不在范围内**：需要管理员主动执行不安全操作的漏洞**不被视为有效漏洞**。管理员拥有完整的系统控制权，应了解其操作和配置的安全影响。这包括但不限于：添加恶意外部服务器（模型、工具、Webhook）、将不可信代码粘贴到函数/工具中，或故意削弱安全设置。**需要管理员疏忽或对管理员进行社会工程的报告可能被拒绝**。
 
 > [!NOTE]
-> AI-aided vulnerability reports **will not be rejected by us by default**. But:
+> 与"默认配置测试"规则类似：如果您认为您发现了一个影响管理员的漏洞，并且**不是由管理员疏忽或故意恶意操作引起的**，
+> **那么我们绝对希望听到它**。本政策旨在过滤对管理员的社会工程攻击、管理员部署的恶意插件和类似的恶意操作，而不是阻止合法的安全研究。
+
+11. **AI 报告透明度**：由于 AI 辅助漏洞报告的极端激增，**您必须披露是否以任何方式使用了 AI** - 无论是用于撰写报告、生成 PoC 还是识别漏洞。如果 AI 以任何方式帮助您创建报告、PoC 或发现漏洞，您必须披露它。
+
+> [!NOTE]
+> 我们**不会默认拒绝**AI 辅助的漏洞报告。但是：
 >
-> - If we suspect you used AI (but you did not disclose it to us), we will be asking tough follow-up questions to validate your understanding of the reported vulnerability and Open WebUI itself.
-> - If we suspect you used AI (but you did not disclose it to us) **and** your report ends up being invalid/not a vulnerability/not reproducible, then you **may be banned** from reporting future vulnerabilities.
+> - 如果我们怀疑您使用了 AI（但您没有向我们披露），我们会提出严格的后续问题，以验证您对报告的漏洞和 Open WebUI 本身的理解。
+> - 如果我们怀疑您使用了 AI（但您没有向我们披露）**并且**您的报告最终无效/不是漏洞/无法复现，那么您**可能会被禁止**报告未来的漏洞。
 >
-> This measure was necessary due to the extreme rise in clearly AI written vulnerability reports, where the vast majority of them
+> 由于明显是 AI 编写的漏洞报告极端增加，我们需要采取这一措施，其中绝大多数报告
 >
-> - were not a vulnerability
-> - were faulty configurations rather than a real vulnerability
-> - did not provide a PoC
-> - violated any of the rules outlined here
-> - had a clear lack of understanding of Open WebUI
-> - wrote comments with conflicting information
-> - used illogical arguments
+> - 不是漏洞
+> - 是错误配置而非真正的漏洞
+> - 没有提供 PoC
+> - 违反了此处概述的任何规则
+> - 对 Open WebUI 缺乏明确的理解
+> - 写有相互矛盾的信息
+> - 使用了不合逻辑的论据
 
-**Non-compliant submissions will be closed, and repeat extreme violators may be banned.** Our goal is to foster a constructive reporting environment where quality submissions promote better security for all users.
+**不符合要求的提交将被关闭，反复严重违规者可能被禁止**。我们的目标是培养一个建设性的报告环境，在这个环境中，高质量的提交可以提高所有用户的安全性。
 
-## Where to report the vulnerability
+## 在哪里报告漏洞
 
-If you want to report a vulnerability and can meet the outlined requirements, [open a vulnerability report here](https://github.com/open-webui/open-webui/security/advisories/new).
-If you feel like you are not able to follow ALL outlined requirements for vulnerability-specific reasons, still do report it, we will check every report either way.
+如果您想报告漏洞并且能够满足概述的要求，请[在此处打开漏洞报告](https://github.com/open-webui/open-webui/security/advisories/new)。
+如果您觉得由于特定于漏洞的原因无法遵循所有概述的要求，仍然请报告它，我们无论如何都会检查每个报告。
 
-## Product Security And For Non-Vulnerability Related Security Concerns:
+## 产品安全和非漏洞相关的安全问题：
 
-If your concern does not meet the vulnerability requirements outlined above, is not a vulnerability, **but is still related to security concerns**, then use the following channels instead:
+如果您的问题不符合上述漏洞要求，不是漏洞，**但仍与安全问题相关**，请改用以下渠道：
 
-- **Documentation issues/improvement ideas:** Open an issue on our [Documentation Repository](https://github.com/open-webui/docs)
-- **Feature requests:** Create a discussion in [GitHub Discussions - Ideas](https://github.com/open-webui/open-webui/discussions/) to discuss with the community if this feature request is wanted by multiple people
-- **Configuration help:** Ask the community for help and guidance on our [Discord Server](https://discord.gg/5rJgQTnV4s) or on [Reddit](https://www.reddit.com/r/OpenWebUI/)
-- **General issues:** Use our [Issue Tracker](https://github.com/open-webui/open-webui/issues)
+- **文档问题/改进想法**：在我们的[文档仓库](https://github.com/open-webui/docs)上打开一个问题
+- **功能请求**：在[GitHub Discussions - Ideas](https://github.com/open-webui/open-webui/discussions/)中创建一个讨论，与社区讨论这个功能请求是否被多人需要
+- **配置帮助**：在我们的[Discord服务器](https://discord.gg/5rJgQTnV4s)或[Reddit](https://www.reddit.com/r/OpenWebUI/)上向社区寻求帮助和指导
+- **一般问题**：使用我们的[问题追踪器](https://github.com/open-webui/open-webui/issues)
 
-**Examples of non-vulnerability, still security related concerns:**
+**非漏洞但仍与安全相关的问题示例**：
 
-- Suggestions for better default configuration values
-- Security hardening recommendations
-- Deployment best practices guidance
-- Unclear configuration instructions
-- Need for additional security documentation
-- Feature requests for optional security enhancements (2FA, audit logging, etc.)
-- General security questions about production deployment
+- 更好的默认配置值建议
+- 安全加固建议
+- 部署最佳实践指导
+- 不明确的配置说明
+- 需要额外的安全文档
+- 可选安全增强的功能请求（2FA、审计日志等）
+- 关于生产部署的一般安全问题
 
-Please use the adequate channel for your specific issue - e.g. best-practice guidance or additional documentation needs into the Documentation Repository, and feature requests into the Main Repository as an issue or discussion.
+请为您的特定问题使用适当的渠道 - 例如，最佳实践指导或额外的文档需求提交到文档仓库，功能请求作为问题或讨论提交到主仓库。
 
-We regularly audit our internal processes and system architecture for vulnerabilities using a combination of automated and manual testing techniques. We are also planning to implement SAST and SCA scans in our project soon.
+我们定期使用自动化和手动测试技术的组合对我们的内部流程和系统架构进行漏洞审计。我们还计划很快在项目中实施 SAST 和 SCA 扫描。
 
-For any other immediate concerns, please create an issue in our [issue tracker](https://github.com/open-webui/open-webui/issues) or contact our team on [Discord](https://discord.gg/5rJgQTnV4s).
+对于任何其他紧急问题，请在我们的[问题追踪器](https://github.com/open-webui/open-webui/issues)中创建一个问题，或在[Discord](https://discord.gg/5rJgQTnV4s)上联系我们的团队。
 
 ---
 
-_Last updated on **2025-11-06**._
+_最后更新于 **2025-11-06**。_

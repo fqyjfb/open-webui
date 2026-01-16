@@ -1,0 +1,16 @@
+{
+  "appId": "com.openwebui.app",
+  "productName": "Open WebUI",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "electron/**/*",
+    "build/**/*",
+    "backend/**/*"
+  ],
+  "win": {
+    "target": "nsis",
+    "arch": "x64"
+  }
+}

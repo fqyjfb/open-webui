@@ -1,82 +1,82 @@
-# Pull Request Checklist
+# 拉取请求检查表
 
-### Note to first-time contributors: Please open a discussion post in [Discussions](https://github.com/open-webui/open-webui/discussions) to discuss your idea/fix with the community before creating a pull request, and describe your changes before submitting a pull request.
+### 首次贡献者注意事项：请在[讨论区](https://github.com/open-webui/open-webui/discussions)中开启一个讨论帖子，在创建拉取请求前与社区讨论您的想法/修复方案，并在提交拉取请求前描述您的更改。
 
-This is to ensure large feature PRs are discussed with the community first, before starting work on it. If the community does not want this feature or it is not relevant for Open WebUI as a project, it can be identified in the discussion before working on the feature and submitting the PR.
+这是为了确保大型功能PR在开始工作前先与社区讨论。如果社区不希望这个功能或者它与Open WebUI项目无关，可以在讨论中识别出来，而不是在开发功能并提交PR后才发现。
 
-**Before submitting, make sure you've checked the following:**
+**提交前，请确保您已检查以下内容：**
 
-- [ ] **Target branch:** Verify that the pull request targets the `dev` branch. **Not targeting the `dev` branch will lead to immediate closure of the PR.**
-- [ ] **Description:** Provide a concise description of the changes made in this pull request down below.
-- [ ] **Changelog:** Ensure a changelog entry following the format of [Keep a Changelog](https://keepachangelog.com/) is added at the bottom of the PR description.
-- [ ] **Documentation:** If necessary, update relevant documentation [Open WebUI Docs](https://github.com/open-webui/docs) like environment variables, the tutorials, or other documentation sources.
-- [ ] **Dependencies:** Are there any new dependencies? Have you updated the dependency versions in the documentation?
-- [ ] **Testing:** Perform manual tests to **verify the implemented fix/feature works as intended AND does not break any other functionality**. Take this as an opportunity to **make screenshots of the feature/fix and include it in the PR description**.
-- [ ] **Agentic AI Code:** Confirm this Pull Request is **not written by any AI Agent** or has at least **gone through additional human review AND manual testing**. If any AI Agent is the co-author of this PR, it may lead to immediate closure of the PR.
-- [ ] **Code review:** Have you performed a self-review of your code, addressing any coding standard issues and ensuring adherence to the project's coding standards?
-- [ ] **Title Prefix:** To clearly categorize this pull request, prefix the pull request title using one of the following:
-  - **BREAKING CHANGE**: Significant changes that may affect compatibility
-  - **build**: Changes that affect the build system or external dependencies
-  - **ci**: Changes to our continuous integration processes or workflows
-  - **chore**: Refactor, cleanup, or other non-functional code changes
-  - **docs**: Documentation update or addition
-  - **feat**: Introduces a new feature or enhancement to the codebase
-  - **fix**: Bug fix or error correction
-  - **i18n**: Internationalization or localization changes
-  - **perf**: Performance improvement
-  - **refactor**: Code restructuring for better maintainability, readability, or scalability
-  - **style**: Changes that do not affect the meaning of the code (white space, formatting, missing semi-colons, etc.)
-  - **test**: Adding missing tests or correcting existing tests
-  - **WIP**: Work in progress, a temporary label for incomplete or ongoing work
+- [ ] **目标分支：** 验证拉取请求的目标分支是 `dev` 分支。**不针对 `dev` 分支将导致PR立即关闭。**
+- [ ] **描述：** 在下方提供此拉取请求中所做更改的简洁描述。
+- [ ] **变更日志：** 确保在PR描述的底部添加遵循[Keep a Changelog](https://keepachangelog.com/)格式的变更日志条目。
+- [ ] **文档：** 如果需要，更新相关文档 [Open WebUI Docs](https://github.com/open-webui/docs)，如环境变量、教程或其他文档资源。
+- [ ] **依赖项：** 是否有任何新的依赖项？您是否已在文档中更新了依赖项版本？
+- [ ] **测试：** 执行手动测试，**验证实现的修复/功能是否按预期工作，并且不会破坏任何其他功能**。借此机会**制作功能/修复的截图并将其包含在PR描述中**。
+- [ ] **智能AI代码：** 确认此拉取请求**不是由任何AI代理编写的**，或者至少**经过了额外的人工审查和手动测试**。如果任何AI代理是此PR的合著者，可能会导致PR立即关闭。
+- [ ] **代码审查：** 您是否对自己的代码进行了自我审查，解决了任何编码标准问题，并确保遵守了项目的编码标准？
+- [ ] **标题前缀：** 为了清楚地分类此拉取请求，请使用以下前缀之一作为拉取请求标题：
+  - **BREAKING CHANGE**：可能影响兼容性的重大变更
+  - **build**：影响构建系统或外部依赖项的变更
+  - **ci**：对我们的持续集成流程或工作流的变更
+  - **chore**：重构、清理或其他非功能性代码变更
+  - **docs**：文档更新或添加
+  - **feat**：向代码库引入新功能或增强功能
+  - **fix**：错误修复或更正
+  - **i18n**：国际化或本地化变更
+  - **perf**：性能改进
+  - **refactor**：代码重组，以提高可维护性、可读性或可扩展性
+  - **style**：不影响代码含义的变更（空白、格式、缺少分号等）
+  - **test**：添加缺失的测试或更正现有测试
+  - **WIP**：进行中的工作，用于不完整或正在进行的工作的临时标签
 
-# Changelog Entry
+# 变更日志条目
 
-### Description
+### 描述
 
-- [Concisely describe the changes made in this pull request, including any relevant motivation and impact (e.g., fixing a bug, adding a feature, or improving performance)]
+- [简要描述此拉取请求中所做的更改，包括任何相关的动机和影响（例如，修复错误、添加功能或提高性能）]
 
-### Added
+### 新增
 
-- [List any new features, functionalities, or additions]
+- [列出任何新功能、功能或添加项]
 
-### Changed
+### 变更
 
-- [List any changes, updates, refactorings, or optimizations]
+- [列出任何更改、更新、重构或优化]
 
-### Deprecated
+### 弃用
 
-- [List any deprecated functionality or features that have been removed]
+- [列出任何已弃用的功能或已删除的功能]
 
-### Removed
+### 删除
 
-- [List any removed features, files, or functionalities]
+- [列出任何已删除的功能、文件或功能]
 
-### Fixed
+### 修复
 
-- [List any fixes, corrections, or bug fixes]
+- [列出任何修复、更正或错误修复]
 
-### Security
+### 安全
 
-- [List any new or updated security-related changes, including vulnerability fixes]
+- [列出任何新的或更新的与安全相关的变更，包括漏洞修复]
 
-### Breaking Changes
+### 破坏性变更
 
-- **BREAKING CHANGE**: [List any breaking changes affecting compatibility or functionality]
+- **BREAKING CHANGE**：[列出任何影响兼容性或功能的破坏性变更]
 
 ---
 
-### Additional Information
+### 附加信息
 
-- [Insert any additional context, notes, or explanations for the changes]
-  - [Reference any related issues, commits, or other relevant information]
+- [插入有关更改的任何附加上下文、注释或解释]
+  - [引用任何相关问题、提交或其他相关信息]
 
-### Screenshots or Videos
+### 截图或视频
 
-- [Attach any relevant screenshots or videos demonstrating the changes]
+- [附上任何展示更改的相关截图或视频]
 
-### Contributor License Agreement
+### 贡献者许可协议
 
-By submitting this pull request, I confirm that I have read and fully agree to the [Contributor License Agreement (CLA)](https://github.com/open-webui/open-webui/blob/main/CONTRIBUTOR_LICENSE_AGREEMENT), and I am providing my contributions under its terms.
+通过提交此拉取请求，我确认我已阅读并完全同意[贡献者许可协议（CLA）](https://github.com/open-webui/open-webui/blob/main/CONTRIBUTOR_LICENSE_AGREEMENT)，并根据其条款提供我的贡献。
 
 > [!NOTE]
-> Deleting the CLA section will lead to immediate closure of your PR and it will not be merged in.
+> 删除CLA部分将导致您的PR立即关闭，不会被合并。
